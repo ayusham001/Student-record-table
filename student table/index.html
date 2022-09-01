@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <div class="box">
+            <div class="change">
+                <button onclick="retrievedata()" id="localdata">Retrieve Data</button>
+                <button onclick="cleardata()" id="localdata">Clear Data</button>
+                Name: <input type="text" id="name" placeholder="Enter Name">
+                Student Id: <input type="text" id="studentid" placeholder="Enter Student Id">
+                Marks: <input type="number" id="marks" placeholder="Enter Marks">
+
+                <button onclick="add()">Add</button>
+                <button onclick="removeSelectedRow()">Remove</button>
+                <button onclick="editSelectedRow()">Edit</button>
+            </div>
+            <div class="display">
+                <table id="table" border="1">
+                    <caption>Student's Record</caption>
+                    <tr>
+                        <td>Name</td>
+                        <td>Student Id</td>
+                        <td>Marks</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="img">
+            <img src="img.png" id="img">
+        </div>
+    </div>
+</body>
+</html>
